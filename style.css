@@ -1,0 +1,121 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+/* logo container */
+.logo-container {
+    display: flex;
+    height: auto;
+}
+
+/* logo */
+.logo img {
+    max-height: 32px;
+    width: auto;
+    padding-left: 20%; 
+    justify-content: ;
+}
+
+/* navigation container */
+.container {
+    display: flex;
+    justify-content: flex;
+     margin: auto; 
+}
+
+/* navigation items */
+.nav-item {
+    padding-left: 5px;
+}
+
+/* nav-items style */
+.nav-item a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: filter 0.10s ease, background-color 0.20s;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* nav-items hover */
+.nav-item a:hover {
+    color: black;
+    background-color: #979494;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* login button style */
+.login {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    padding-left: 30px;
+}
+
+/* login button hover */
+.login:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 227, 228);
+    transition: background-color 0.3s;
+}
+
+/* sign in button */
+.button-Signin {
+    display: flex;
+    padding-right: 40px;
+    padding-left: 1.5px;
+}
+
+/* for href tag remove underline */
+.button-Signin a {
+    text-decoration: none;
+}
+
+/* sign in button style */
+.Signin-btn {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(227, 227, 228);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+}
+
+/* sign in button hover */
+.Signin-btn:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 986px) {
+
+}
+
+
+
+
+  
