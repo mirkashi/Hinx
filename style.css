@@ -47,7 +47,7 @@ header {
 
 /* nav-items style */
 .nav-item a {
-    color: white;
+    color: rgb(215, 215, 215);
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -65,7 +65,7 @@ header {
 
 /* login button style */
 .login {
-    color: white;
+    color:  rgb(215, 215, 215);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -84,7 +84,7 @@ header {
 /* login button hover */
 .login:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(227, 227, 228);
+    background-color: rgb(215, 215, 215);
     transition: background-color 0.3s;
 }
 
@@ -105,7 +105,7 @@ header {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: rgb(227, 227, 228);
+    background-color: rgb(215, 215, 215);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     font-size: 16px;
@@ -115,7 +115,7 @@ header {
 /* sign in button hover */
 .Signin-btn:hover {
     background-color: black;
-    color: white;
+    color:  rgb(215, 215, 215);
     transition: background-color 0.3s;
 }
 
