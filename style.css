@@ -29,15 +29,20 @@ header {
 }
 
 /* navigation container */
-.container {
-    display: flex;
-    justify-content: flex;
+.navbar {
      margin: auto; 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
 }
 
 /* navigation items */
 .nav-item {
     padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
 }
 
 /* nav-items style */
@@ -47,7 +52,6 @@ header {
     font-size: 14px;
     text-decoration: none;
     transition: filter 0.10s ease, background-color 0.20s;
-    display: block;
     padding: 10px 15px;
 }
 
@@ -116,7 +120,7 @@ header {
 }
 
 @media (max-width: 986px) {
-
+  
 }
 
 
