@@ -81,6 +81,11 @@ header {
     text-decoration: none;
 }
 
+/* login active */
+.login:active {
+    background-color: rgb(215, 215, 215);
+    color: #000;
+}
 /* login button hover */
 .login:hover {
     color: rgb(0, 0, 0);
@@ -98,6 +103,7 @@ header {
 /* for href tag remove underline */
 .button-Signin a {
     text-decoration: none;
+
 }
 
 /* sign in button style */
@@ -111,15 +117,21 @@ header {
     font-size: 16px;
     border: none;
 }
+ 
+/*sign in button active*/
+.Signin-btn:active{
+    background-color: black;
+    color:  rgb(215, 215, 215);
+}
 
 /* sign in button hover */
 .Signin-btn:hover {
-    background-color: black;
+    background-color: transparent;
     color:  rgb(215, 215, 215);
     transition: background-color 0.3s;
 }
 
-@media (max-width: 986px) {
+@media (max-width: 800px) {
   
 }
 
