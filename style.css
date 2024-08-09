@@ -136,7 +136,7 @@ header {
 .hamburger span {
     width: 25px;
     height: 2.7px;
-    background-color: white;
+    background-color:  rgb(215, 215, 215);
     border-radius: 3px;
 }
 
@@ -152,14 +152,24 @@ header {
     }
 
     .nav-item {
-        display: none;  /*we have to change this later when we activate the hamburger icon*/
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;  
     }
-
     .navbar {
         margin: 0;
         flex-grow: 1; /* This will make the navbar take up available space */
     }
 
+    .nav-items.open {
+        height: auto;
+    }
     .hamburger {
         display: flex;
         justify-content: center; /* Align the hamburger to the end */
@@ -167,3 +177,7 @@ header {
         padding-right: 20px; /* Add padding to the right if needed */
     }
 }
+
+
+
+
