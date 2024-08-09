@@ -5,19 +5,10 @@
     box-sizing: border-box;
 }
 
-
-
 /* header */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: black;
-}
-/* logo container */
-.logo-container {
-    display: flex;
-    height: auto;
 }
 
 /* logo */
@@ -30,19 +21,16 @@ header {
 
 /* navigation container */
 .navbar {
-     margin: auto; 
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
+    margin: auto; 
+    display: flex;
 }
 
 /* navigation items */
 .nav-item {
     padding-left: 5px;
     display: flex;
-    justify-content: center;
     list-style: none;
-   
+    align-items: center;
 }
 
 /* nav-items style */
@@ -63,6 +51,11 @@ header {
     font-weight: bold;
 }
 
+/* home link hide in desktop disply*/
+.home{
+    display: none;
+}
+
 /* login button style */
 .login {
     color:  rgb(215, 215, 215);
@@ -77,6 +70,7 @@ header {
     align-items: center;
 }
 
+/* login link disply*/
 .login-container a {
     text-decoration: none;
 }
@@ -103,7 +97,6 @@ header {
 /* for href tag remove underline */
 .button-Signin a {
     text-decoration: none;
-
 }
 
 /* sign in button style */
@@ -130,12 +123,47 @@ header {
     color:  rgb(215, 215, 215);
     transition: background-color 0.3s;
 }
-
-@media (max-width: 800px) {
-  
+ 
+/* humburger style*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
+/* hamburger style*/
+.hamburger span {
+    width: 25px;
+    height: 2.7px;
+    background-color: white;
+    border-radius: 3px;
+}
 
+@media (max-width: 800px) {
+    .login-container {    /*goes logo icon to the start of the navbar*/
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
 
+    .login-container, .button-Signin {   
+        display: none;    /*hides login sigup button in mobile disply*/
+    }
 
-  
+    .nav-item {
+        display: none;  /*we have to change this later when we activate the hamburger icon*/
+    }
+
+    .navbar {
+        margin: 0;
+        flex-grow: 1; /* This will make the navbar take up available space */
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center; /* Align the hamburger to the end */
+        flex-grow: 0; /* Prevent the hamburger from growing */
+        padding-right: 20px; /* Add padding to the right if needed */
+    }
+}
