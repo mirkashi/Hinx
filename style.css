@@ -14,7 +14,6 @@ header {
 /* logo */
 .logo img {
     max-height: 32px;
-    width: auto;
     padding-left: 20%; 
     margin-right: 10px;
 }
@@ -31,15 +30,15 @@ header {
     display: flex;
     list-style: none;
     align-items: center;
+    .home{ display: none; }
 }
 
 /* nav-items style */
 .nav-item a {
+    text-decoration: none;
     color: rgb(215, 215, 215);
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
-    text-decoration: none;
-    transition: filter 0.10s ease, background-color 0.20s;
     padding: 10px 15px;
 }
 
@@ -47,78 +46,49 @@ header {
 .nav-item a:hover {
     color: black;
     background-color: #979494;
-    font-size: 14px;
     font-weight: bold;
+    transition: filter 0.30s ease, background-color 0.40s;
 }
 
-/* home link hide in desktop disply*/
-.home{
-    display: none;
+.buttons, .buttons a {
+    text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    padding-right: 5px;
 }
 
 /* login button style */
 .login {
     color:  rgb(215, 215, 215);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 16px;
-    text-decoration: none;
-    display: block;
     padding: 10px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: none;
     border: none;
     align-items: center;
 }
 
-/* login link disply*/
-.login-container a {
-    text-decoration: none;
-}
-
-/* login active */
-.login:active {
-    background-color: rgb(215, 215, 215);
-    color: #000;
-}
-/* login button hover */
-.login:hover {
+/* login button hover and active */
+.login:hover, .login:active {
     color: rgb(0, 0, 0);
     background-color: rgb(215, 215, 215);
     transition: background-color 0.3s;
 }
 
-/* sign in button */
-.button-Signin {
-    display: flex;
-    padding-right: 40px;
-    padding-left: 1.5px;
-}
-
-/* for href tag remove underline */
-.button-Signin a {
-    text-decoration: none;
-}
-
 /* sign in button style */
 .Signin-btn {
     display: block;
-    text-decoration: none;
     padding: 10px 15px;
-    background-color: rgb(215, 215, 215);
+    background: rgb(215, 215, 215);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     font-size: 16px;
     border: none;
 }
  
-/*sign in button active*/
-.Signin-btn:active{
-    background-color: black;
-    color:  rgb(215, 215, 215);
-}
-
-/* sign in button hover */
-.Signin-btn:hover {
+/* sign in button hover and active*/
+.Signin-btn:hover, .Signin-btn:active {
     background-color: transparent;
     color:  rgb(215, 215, 215);
     transition: background-color 0.3s;
@@ -141,16 +111,9 @@ header {
 }
 
 @media (max-width: 800px) {
-    .login-container {    /*goes logo icon to the start of the navbar*/
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    .login-container, .button-Signin {   
+    .buttons {   
         display: none;    /*hides login sigup button in mobile disply*/
     }
-
     .nav-item {
         position: absolute;
         top: 50px;
@@ -158,26 +121,23 @@ header {
         background-color: black;
         flex-direction: column;
         width: 200px;
-        height: 0;
         overflow: hidden;
         transition: height 0.3s ease;  
+    }
+    .nav-items.open {
+        height: auto;
     }
     .navbar {
         margin: 0;
         flex-grow: 1; /* This will make the navbar take up available space */
     }
-
-    .nav-items.open {
-        height: auto;
-    }
     .hamburger {
         display: flex;
-        justify-content: center; /* Align the hamburger to the end */
+        justify-content: center;
         flex-grow: 0; /* Prevent the hamburger from growing */
-        padding-right: 20px; /* Add padding to the right if needed */
+        padding-right: 10px; /* Add padding to the right if needed */
     }
 }
-
 
 
 
