@@ -127,6 +127,8 @@ header {
     }
     .nav-items.open {
         height: auto;
+        padding: 0;
+        margin: 0;
     }
     .navbar {
         margin: 0;
