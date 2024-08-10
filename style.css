@@ -38,7 +38,7 @@ header {
     text-decoration: none;
     color: rgb(215, 215, 215);
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    font-size: 85%;
     padding: 10px 15px;
 }
 
@@ -61,7 +61,7 @@ header {
 .login {
     color:  rgb(215, 215, 215);
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 100%;
     padding: 10px 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: none;
@@ -83,7 +83,7 @@ header {
     background: rgb(215, 215, 215);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 100%;
     border: none;
 }
  
@@ -121,6 +121,7 @@ header {
         background-color: black;
         flex-direction: column;
         width: 200px;
+        height: 0;
         overflow: hidden;
         transition: height 0.3s ease;  
     }
