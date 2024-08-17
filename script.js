@@ -1,9 +1,31 @@
-// Get elements
-const hamburger = document.querySelector('.hamburger');
-const navbar = document.querySelector('.nav-item');
+document.addEventListener('DOMContentLoaded', () => {
+    const navItemsWithMegaMenu = document.querySelectorAll('.nav-item > a');
 
-// Add click event listener to the hamburger icon
-hamburger.addEventListener('click', () => {
-    // Toggle the 'open' class on the navbar
-    navbar.classList.toggle('open');
+    navItemsWithMegaMenu.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+    
+            const megaMenu = item.nextElementSibling;
+            if (megaMenu && megaMenu.classList.contains('mega-menu')) {
+                megaMenu.style.display = 'block';
+            }
+        });
+
+        item.addEventListener('mouseleave', () => {
+
+            const megaMenu = item.nextElementSibling;
+            if (megaMenu && megaMenu.classList.contains('mega-menu')) {
+                megaMenu.style.display = 'none';
+            }
+        });
+    });
+
+
+    const hamburger = document.querySelector('.hamburger');
+    const navItems = document.querySelector('.nav-item');
+
+    if (hamburger && navItems) {
+        hamburger.addEventListener('click', () => {
+            navItems.classList.toggle('open');
+        });
+    }
 });
