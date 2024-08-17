@@ -30,7 +30,6 @@ header {
     display: flex;
     list-style: none;
     align-items: center;
-  
 .home{ display: none; }
 }
 
@@ -48,6 +47,54 @@ header {
     background-color: hsla(0, 2%, 59%, 1);
     font-weight: bold;
     transition: filter 0.85s ease, background-color 0.85s ease, color 0.85s ease;
+}
+
+/* Mega Menu */
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+}
+
+/* Mega Menu Layout */
+.mega-menu .sub-cat-sol,
+.mega-menu .sub-cat-ser,
+.mega-menu .sub-cat-res,
+.mega-menu .sub-cat-sub-ser {
+    display: block;
+}
+
+.mega-menu .sub-cat li,
+.mega-menu .sub-cat-sol li,
+.mega-menu .sub-cat-ser li,
+.mega-menu .sub-cat-res li {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.mega-menu a {
+    display: block;
+    padding: 10px;
+    color: rgba(215, 215, 215, 0.95);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Mega Menu Hover */
+.mega-menu a:hover {
+    color: black;
+    background-color: hsla(0, 2%, 59%, 1);
+}
+
+/* Show mega menu on hover */
+.nav-item > a:hover + .mega-menu {
+    display: block;
 }
 
 .button, .button a {
@@ -89,6 +136,8 @@ header {
     background-color:   hsla(0, 2%, 59%, 0.95);
     border-radius: 3px;
 }
+
+
 
 @media (max-width: 800px) {
     .button {   
